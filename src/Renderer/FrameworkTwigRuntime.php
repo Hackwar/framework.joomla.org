@@ -77,7 +77,7 @@ class FrameworkTwigRuntime
 	 */
 	public function getRouteUri(string $route = ''): string
 	{
-		return $this->app->get('uri.base.path') . $route;
+		return $this->app->get('uri.base.path') . '/' . $route;
 	}
 
 	/**

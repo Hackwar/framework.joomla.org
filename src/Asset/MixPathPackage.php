@@ -65,6 +65,6 @@ class MixPathPackage extends PathPackage
 			return $this->decoratedPackage->getUrl($path);
 		}
 
-		return $this->getBasePath() . ltrim($versionedPath, '/');
+		return $this->getBasePath() . $versionedPath;
 	}
 }
